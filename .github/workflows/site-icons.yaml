@@ -40,9 +40,9 @@ jobs:
         uses: actions/cache@v4
         with:
           path: /tmp/hugo_cache
-          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
+          key: ${{ runner.os }}-g0fcn-${{ hashFiles('**/go.sum') }}
           restore-keys: |
-            ${{ runner.os }}-hugomod-
+            ${{ runner.os }}-g0fcn-
 
       - name: Build
         working-directory: icons
